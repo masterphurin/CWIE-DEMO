@@ -1,0 +1,47 @@
+{
+  "name": "techlearn-academy-landing",
+  "version": "1.0.0", 
+  "description": "Landing page for TechLearn Academy - Online Technology Education Institute",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000 --open=/index.html",
+    "dev": "live-server --port=3000 --open=/index.html --watch=assets/",
+    "build": "echo 'Building project...' && npm run minify-css && npm run minify-js",
+    "minify-css": "cleancss -o assets/css/style.min.css assets/css/style.css",
+    "minify-js": "uglifyjs assets/js/script.js -o assets/js/script.min.js",
+    "serve": "python -m http.server 8000",
+    "validate": "html-validate index.html"
+  },
+  "keywords": [
+    "landing-page",
+    "tailwind-css",
+    "responsive",
+    "education",
+    "technology",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "TechLearn Academy",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "clean-css-cli": "^5.6.2",
+    "uglify-js": "^3.17.4",
+    "html-validate": "^7.16.0"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/techlearn-academy/landing-page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/techlearn-academy/landing-page/issues"
+  },
+  "homepage": "https://techlearn-academy.github.io/landing-page/",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
